@@ -131,8 +131,7 @@ package() {
     pip \
       install \
         "${_pkg}" \
-        --root \
-          "${pkgdir}"
+        --root="${pkgdir}"
   fi
   for f \
     in cygdb cython cythonize; do
